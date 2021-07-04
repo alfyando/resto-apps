@@ -15,11 +15,11 @@ const createRestoDetailTemplate = (result) => `
     <div class="menulist">
       <div class="detail_food">
         <h3>Makanan</h3>
-        ${result.menus.foods.map((food) => `<ul><li>${food.name}</li></ul>`).join('')}
+        ${result.menus.foods.map((food) => `<ul><li style="list-style:none;">${food.name}</li></ul>`).join('')}
       </div>
       <div class="detail_drink">
         <h3>Minuman</h3>
-        ${result.menus.drinks.map((drink) => `<ul><li>${drink.name}</li></ul>`).join('')}
+        ${result.menus.drinks.map((drink) => `<ul><li style="list-style:none;">${drink.name}</li></ul>`).join('')}
       </div>
     </div>
     <h2>Reviews (${result.customerReviews.length})</h2>
