@@ -24,7 +24,7 @@ const createRestoDetailTemplate = (result) => `
     </div>
     <h2>Reviews (${result.customerReviews.length})</h2>
     <div class="detail_review">
-    ${createReviewCard(result.customerReviews)};
+    ${createReviewCard(result.customerReviews)}
     </div>
   </div>
 `;
