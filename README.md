@@ -24,6 +24,12 @@ make sure you have NodeJS installed
 
    # Production mode
    npm run build-local
+   
+   # End to end test
+   npm run e2e
+   
+   # Integration Test
+   npm run test
    ```
 
 ## Live Site URL
