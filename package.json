@@ -4,8 +4,13 @@
   "description": "memuat informasi seputar restoran",
   "main": "index.js",
   "scripts": {
+    "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "build-local": "webpack --config webpack.prod.js",
+    "build": "webpack --config webpack.deploy.js",
     "start": "node server.js",
-    "heroku-postbuild": "webpack -p --config webpack.prod.js --progress"
+    "test": "karma start",
+    "e2e": "codeceptjs run --steps",
+    "build-image": "node sharp.js"
   },
   "author": "alfyando",
   "license": "ISC",

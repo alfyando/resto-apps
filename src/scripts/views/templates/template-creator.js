@@ -35,7 +35,7 @@ const createSkeletonTemplate = (count) => {
   for (let i = 0; i < count; i += 1) {
     template += `
       <div class="card">
-      <img class="card_item_img" width="100%" height="200px" src="./images/placeholder.svg" alt="skeleton">
+      <img class="card_item_img" width="100%" height="200px" src="./placeholder.svg" alt="skeleton">
       <div class="card_item_content">
         <h2 class="skeleton">Lorem ipsum dolor sit.</a></h2>
         <p class="skeleton"></p>
@@ -49,7 +49,7 @@ const createSkeletonTemplate = (count) => {
 
 const createRestoItemTemplate = (result) => `
     <div class="card">
-    <img class="lazyload card_item_img" src="./images/placeholder.svg" height="200px" width="100%" data-src="${CONFIG.BASE_IMAGE_URL}small/${result.pictureId}" alt="${result.name}" title="${result.name}">
+    <img class="lazyload card_item_img" src="./placeholder.svg" height="200px" width="100%" data-src="${CONFIG.BASE_IMAGE_URL}small/${result.pictureId}" alt="${result.name}" title="${result.name}">
     <div class="city">${result.city}</div>
     <div class="card_item_content">
         <h2 class="card_item_title"><a tabindex="0" href="${`/#/detail/${result.id}`}">${result.name}</a></h2>
