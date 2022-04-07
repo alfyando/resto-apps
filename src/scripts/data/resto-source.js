@@ -1,6 +1,5 @@
 /* eslint-disable linebreak-style */
 import API_ENDPOINT from '../global/api-endpoint';
-import CONFIG from '../global/config';
 
 class RestaurantSource {
   static async getRestaurantList() {
@@ -19,7 +18,6 @@ class RestaurantSource {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
-        'X-Auth-Token': CONFIG.KEY,
         'Content-Type': 'application/json',
       },
     });
