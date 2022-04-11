@@ -34,7 +34,7 @@ class App {
     const skipContent = document.querySelector('#maincontent');
     skipContent.addEventListener('click', (event) => {
       event.preventDefault();
-      docoument.querySelector('#maincontent').focus();
+      document.querySelector('#maincontent').focus();
     });
   }
 }
