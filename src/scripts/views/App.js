@@ -31,7 +31,7 @@ class App {
     const page = routes[url];
     this._content.innerHTML = await page.render();
     await page.afterRender();
-    const skipContent = document.querySelector('#maincontent');
+    const skipContent = document.querySelector('.skip-link');
     skipContent.addEventListener('click', (event) => {
       event.preventDefault();
       document.querySelector('#maincontent').focus();
