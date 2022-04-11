@@ -3,7 +3,7 @@
 import CONFIG from '../../global/config';
 
 const createRestoDetailTemplate = (result) => `
-  <h1 class="explore">Detail of ${result.name}</h1>
+  <h1 tabindex="0" class="explore">Detail of ${result.name}</h1>
   <img class="detail_poster" height="400px" width="100%" src="${CONFIG.BASE_IMAGE_URL}medium/${result.pictureId}" alt="restoran ${result.name}">
   <div class="detail_info">
     <h2><i class="fa fa-map-marker fa-md" aria-hidden="true"></i><span class="color" aria-label="address at ${result.address}, ${result.city}"> ${result.address}, ${result.city}</span></h2>
