@@ -1,4 +1,5 @@
 # resto-apps
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0e77c755-ab72-444b-ac0c-ef53928b873b/deploy-status)](https://app.netlify.com/sites/resto-apps/deploys)
 Final Submission MFWDE dicoding.
 
 This is a progressive web app (PWA) that was created using Vanilla JS, Webpack, Workbox, NodeJS, and applying the responsive website with pure CSS.
