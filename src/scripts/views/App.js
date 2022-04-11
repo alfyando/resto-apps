@@ -32,7 +32,8 @@ class App {
     this._content.innerHTML = await page.render();
     await page.afterRender();
     const skipContent = document.querySelector('#maincontent');
-    skipContent.addEventListener('click', () => {
+    skipContent.addEventListener('click', (event) => {
+      event.preventDefault();
       docoument.querySelector('#maincontent').focus();
     });
   }
